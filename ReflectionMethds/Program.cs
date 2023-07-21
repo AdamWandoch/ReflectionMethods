@@ -2,13 +2,9 @@
 Console.WriteLine();
 
 new BasePage();
-
 new BasePageComprador(12);
-
 new OrdemCompraPesquisa();
-
 new OrdemCompraManutencao();
-
 new CotacaoPesquisa(123);
 
 Console.WriteLine("test end");

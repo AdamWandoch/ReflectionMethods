@@ -1,7 +1,7 @@
 ﻿/// <summary>
 /// Clase do base da todas telas onde será bem implementar ValidarAcesso
 /// </summary>
-class BasePage
+public class BasePage
 {
     /// <summary>
     /// Para paginas que erdem do BasePage nem precisa chamar no Page_PreInit(), o construtor ja chama

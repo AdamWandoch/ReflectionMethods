@@ -12,7 +12,7 @@ Console.WriteLine("test end"); Console.ReadLine();
 /// Simulacao das classes que erdem do BasePage
 /// </summary>
 #region Classes Derivadas
-class BasePageComprador : BasePage
+public class BasePageComprador : BasePage
 {
     public BasePageComprador() { }
     public BasePageComprador(int nValor)
@@ -22,23 +22,19 @@ class BasePageComprador : BasePage
     }
 }
 
-class OrdemCompraPesquisa : BasePageComprador
+public class OrdemCompraPesquisa : BasePageComprador
 {
     public OrdemCompraPesquisa() { }
 }
 
-class OrdemCompraManutencao : OrdemCompraPesquisa
+public class OrdemCompraManutencao : OrdemCompraPesquisa
 {
-    public OrdemCompraManutencao()
-    {
-        Console.WriteLine("Logica do OrdemCompraManutencao - construtor vazio");
-        Console.WriteLine();
-    }
+    public OrdemCompraManutencao() { Console.WriteLine("Logica do OrdemCompraManutencao - construtor vazio"); Console.WriteLine(); }
 }
 
-class CotacaoPesquisa : BasePage
+public class CotacaoPesquisa : BasePage
 {
-    public CotacaoPesquisa(int a) { Console.WriteLine("Tela sem construtor vazio"); }
+    public CotacaoPesquisa(int nValor) { Console.WriteLine("Tela sem construtor vazio"); Console.WriteLine(); }
 }
 #endregion
 

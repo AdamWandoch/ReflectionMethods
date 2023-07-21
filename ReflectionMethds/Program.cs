@@ -1,5 +1,4 @@
-﻿Console.WriteLine("test start");
-Console.WriteLine();
+﻿Console.WriteLine("test start"); Console.WriteLine();
 
 new BasePage();
 new BasePageComprador(12);
@@ -7,14 +6,12 @@ new OrdemCompraPesquisa();
 new OrdemCompraManutencao();
 new CotacaoPesquisa(123);
 
-Console.WriteLine("test end");
-Console.ReadLine();
+Console.WriteLine("test end"); Console.ReadLine();
 
 /// <summary>
 /// Simulacao das classes que erdem do BasePage
 /// </summary>
 #region Classes Derivadas
-
 class BasePageComprador : BasePage
 {
     public BasePageComprador() { }
@@ -41,9 +38,8 @@ class OrdemCompraManutencao : OrdemCompraPesquisa
 
 class CotacaoPesquisa : BasePage
 {
-    public CotacaoPesquisa(int a) { }
+    public CotacaoPesquisa(int a) { Console.WriteLine("Tela sem construtor vazio"); }
 }
-
 #endregion
 
 /// <summary>

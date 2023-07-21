@@ -32,7 +32,11 @@ class OrdemCompraPesquisa : BasePageComprador
 
 class OrdemCompraManutencao : OrdemCompraPesquisa
 {
-    public OrdemCompraManutencao() { }
+    public OrdemCompraManutencao()
+    {
+        Console.WriteLine("Logica do OrdemCompraManutencao - construtor vazio");
+        Console.WriteLine();
+    }
 }
 
 class CotacaoPesquisa : BasePage
